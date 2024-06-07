@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;500&display=swap");
 
 /* General styles */
 body,
@@ -110,7 +110,6 @@ html {
   align-items: center;
 }
 
-
 /* Social Links Styles */
 .social-links {
   display: flex;
@@ -181,7 +180,6 @@ html {
 }
 
 .intro h1 {
-  margin: 0;
   font-size: 24px;
 }
 
@@ -189,11 +187,14 @@ html {
   margin: 10px 0;
 }
 
-.intro button {
+
+.view-resume-btn {
   padding: 10px 20px;
+  text-decoration: none;
+  font-weight: 600;
   border: none;
-  background-color: #ecc94b;
-  color: black;
+  background-color: #efc11a;
+  color: white;
   cursor: pointer;
   border-radius: 5px;
 }
@@ -225,27 +226,59 @@ html {
   color: #a0aec0;
 }
 
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
 .services {
   margin-top: 20px;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 20px;
 }
 
 .service {
+  display: flex;
+  align-items: center;
   background-color: #2d3748;
-  border-radius: 8px;
-  padding: 20px;
-  box-sizing: border-box;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.image-placeholder {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.image-placeholder img {
+  width: 100px;
+  height: 100px;
+  border-radius: 20px;
+}
+
+.content h2 {
+  color: white;
+  margin: 0;
+  font-size: 24px;
+}
+
+.content p {
+  margin: 0;
+  font-size: 16px;
 }
 
 .service h2 {
   font-size: 20px;
-  font-weight: bold;
 }
 
 .service p {
-  margin-top: 10px;
+  margin-top: 5px;
   color: #a0aec0;
 }
 
@@ -356,24 +389,21 @@ html {
   .project-content {
     padding: 10px;
   }
-
-
 }
 
 /* Code Animation */
 .console-container {
- 
-  font-family: JetBrains Mono, monospace;;
-  font-size:16px;
-  text-align:center;
-  display:block;
-  position:relative;
-  color:white;
-  margin:auto;
+  font-family: JetBrains Mono, monospace;
+  font-size: 16px;
+  text-align: center;
+  display: block;
+  position: relative;
+  color: white;
+  margin: auto;
 }
 .console-underscore {
-  display:inline-block;
-  position:relative;
-  top:-0.14em;
-  left:-5px;
+  display: inline-block;
+  position: relative;
+  top: -0.14em;
+  left: -5px;
 }
